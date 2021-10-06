@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/signin" component={signinPage}  />

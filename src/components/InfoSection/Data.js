@@ -4,15 +4,17 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'Premium Bank',
-    headline: 'Unlimited Transactions with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees',
+    headline: 'Award Winning Engineering Company',
+    description: 'Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra scelerisque. Ipsum, turpis facilisis tempor pulvinar in lobortis ornare magna.',
     buttonLabel: 'Get Started',
-    imgStart: false,
-    img: require('../images/svg-1.svg'),   // Edit this image broo
+    imgStart: true,
+    img: require('../images/about.png'),   // Edit this image broo
     alt: 'Car',
     dark: false,
     primary: false,
     darkText: true,
+    years: 'YEARS EXPERIENCE',
+    number: '20y'
 };
 
 export const homeObjTwo = {
@@ -50,7 +52,7 @@ export const homeObjThree = {
 };
 
 export const homeObjFour = {
-    id: 'signup',
+    id: 'testimonial',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,

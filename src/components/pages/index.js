@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
+import Contact from '../Contact/Contact';
+import { homeObjTwo } from '../Contact/Data';
+
 import Footer from '../Footer';
 
 import HeroSection from '../HeroSection';
 import InfoSection from '../InfoSection';
-import { homeObjFour, homeObjOne, homeObjThree, homeObjTwo } from '../InfoSection/Data';
+import { homeObjOne,  } from '../InfoSection/Data';
 import Navbar from '../Navbar';
 import Services from '../Services';
 import Sidebar from '../Sidebar';
+import Testimonial from '../Testimonial/Testimonial';
 
 
 function Home() {
@@ -22,10 +26,9 @@ function Home() {
             <Navbar toggle={toggle} />
             <HeroSection />
             <InfoSection {...homeObjOne} />
-            <InfoSection {...homeObjTwo} />
-            <InfoSection {...homeObjThree} />
-            <InfoSection {...homeObjFour} />
             <Services />
+            <Testimonial />
+            <Contact {...homeObjTwo} />
             <Footer />
 
         </>

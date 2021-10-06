@@ -6,11 +6,10 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 3px;
   height: 80px;
   position: relatuve;
   z-index: 1;
-  margin-bottom: 380px;
+  margin-bottom: 560px;
 
   :before {
       content: '';
@@ -45,20 +44,18 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
-  position: absolute;
-  padding: 8px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 500px
+  margin-top: 500px;
+  width: 100%;
 `
 
 export const HeroH1 = styled.h1`
   color: #fff;
-  font-size: 48px;
-  text-align: center;
-  font-weight: bold;
+  font-size: 72px;
+  font-weight: 900;
+  margin-left: 165px;
+
 
   @media screen and (max-width: 768px) {
       font-size: 40px;
@@ -72,9 +69,25 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
   margin-top: 24px;
   color: #fff;
-  font-size: 24px;
-  text-align: center;
-  max-width: 600px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-left: 165px;
+
+  @media screen and (max-width: 768px) {
+      font-size: 24px;
+  }
+
+  @media screen and (max-width: 480px) {
+      font-size: 18px;
+  }
+`
+
+export const HeroP1 = styled.p`
+  margin-top: 24px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 165px;
 
   @media screen and (max-width: 768px) {
       font-size: 24px;
@@ -88,8 +101,10 @@ export const HeroP = styled.p`
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
   align-items: center;
+  margin-left: 165px;
+  margin-bottom: 20px;
 `
 
 export const ArrowForward = styled(MdArrowForward)`
