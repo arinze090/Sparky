@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { Link as LinkR} from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+import {Link as LinkR} from 'react-router-dom';
+import {Link as LinkS} from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#6699FF' : 'transparent')};
-  height : 80px;
+  background: ${({scrollNav}) => (scrollNav ? '#6699FF' : 'transparent')};
+  height: 80px;
   display: flex;
   justify-contents: center;
   align-items: center;
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   z-index: 10;
 
   @media screen and (9max-width: 960px) {
-      transition: 0.8s all ease;
+    transition: 0.8s all ease;
   }
 `;
 
@@ -39,23 +39,43 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
   width: 100px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 40px;
+    height: 40px;
+    margin-top: 10px;
+  }
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-      color: #fff;
-      align-items: center;    
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
   }
-`
+
+  @media screen and (min-width: 368px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+    align-items: center;
+  }
+`;
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -65,14 +85,14 @@ export const NavMenu = styled.ul`
   margin-left: 572px;
 
   @media screen and (max-width: 768px) {
-      display: none;
+    display: none;
   }
-`
+`;
 
 export const NavItem = styled.li`
   height: 80px;
-  margin-right: 72px
-`
+  margin-right: 72px;
+`;
 
 export const NavLinks = styled(LinkS)`
   color: #fff;
@@ -86,9 +106,9 @@ export const NavLinks = styled(LinkS)`
   font-weight: 800;
 
   &.active {
-      border-bottom: 3px solid #000;
+    border-bottom: 3px solid #000;
   }
-`
+`;
 
 export const NavBtn = styled.nav`
   display: flex;
@@ -97,7 +117,7 @@ export const NavBtn = styled.nav`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 200px;
@@ -117,9 +137,8 @@ export const NavBtnLink = styled(LinkR)`
   align-items: center;
 
   &:hover {
-      transition: all 0.2s ease-in-out;
-      background: #fff;
-      color: #010606;
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
   }
-
-`
+`;

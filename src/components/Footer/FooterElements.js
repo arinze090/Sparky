@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { Link as LinkR } from 'react-router-dom';
-
-
+import {Link} from 'react-router-dom';
+import {Link as LinkR} from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
@@ -116,8 +114,17 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const WebsiteRights = styled.div`
-color: black;
-margin-bottom: 45px;
+  color: black;
+  margin-bottom: 45px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    margin-top: 20px;
+    margin-left: 20px
+  }
 `;
 
 export const SocialIcons = styled.div`

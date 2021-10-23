@@ -1,31 +1,354 @@
-.form{
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin-top: 40px;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'Mulish';
+  color: #6699ff;
+  font-weight: 700;
+}
+
+.F1 {
+  margin-left: 60px;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 900px;
+  margin-bottom: 40px;
+}
+
+.input1 {
+  max-width: 250px;
+  margin-right: 20px;
+}
+
+.btn {
+  margin-left: 40px;
+}
+
+.input2 {
+  width: 520px;
+  display: flex;
+  height: 120px;
+}
+
+.con {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-left: 60px;
+  font-family: 'Mulish';
+  color: gray;
+  /* background-color: blueviolet; */
+}
+
+.test {
+  width: 260px;
+  margin-right: 20px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+/* body{
+    background: black;
     display: flex;
     flex-direction: column;
+    align-items: center;
+} */
+
+#contact-container {
+  width: 1200px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  /* background: black;   */
+  /* margin-left: -40px; */
+  /* backdrop-filter: blur(60px); */
+  /* border: 1px solid black; */
+  margin-bottom: 40px;
+  /* overflow-x: hidden; */
+  grid-template-columns: 1fr;
 }
 
-.form1{
+@media screen and (max-width: 1000px) {
+  #contact-container {
+    /* overflow-x: hidden; */
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-}
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    margin-bottom: -40px;
+    justify-content: center;
+  }
 
-.input1{
-    max-width: 250px;
-    margin-right: 20px;
-    margin-bottom: -10px;
-    margin-top: 20px;
-}
-
-.input2{
-    max-width: 520px;
+  .form {
     display: flex;
-    border: 1px solid black;
-    height: 120px;
+    margin-left: 290px;
+    align-content: center;
+    justify-content: center;
+  }
 }
 
-.test{
-    width: 260px;
-    margin-right: 20px;
-    border: 1px solid black;
-    margin-top: 20px;
+@media screen and (max-width: 768px) {
+  #contact-container {
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    margin-bottom: 70px;
+    justify-content: center;
+    max-height: 100%;
+    max-width: min-content;
+    margin-top: -20px;
+  }
+
+  .imageContainer {
+    display: flex;
+    width: fit-content;
+    height: min-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 90px;
+  }
+
+  .form1 {
+    width: 80%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input1 {
+    display: flex;
+    margin-bottom: 30px;
+    max-width: 350px;
+  }
+
+  .input2 {
+    display: flex;
+    margin-bottom: 30px;
+    max-width: 350px;
+  }
+
+  .con {
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+    margin-right: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 140px;
+  }
+
+  btn {
+    /* margin-left: 70px; */
+    background-color: #6699ff;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 12px 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: min-content;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    margin-bottom: 180px;
+    object-fit: contain;
+    -o-object-fit: contain;
+  }
+
+  .imageContainer {
+    display: flex;
+    width: fit-content;
+    height: min-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 150px;
+  }
+
+  .contactImage {
+    width: 85%;
+    height: 85%;
+    /* margin-left: 30px; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .form1 {
+    width: 80%;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input1 {
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 250px;
+  }
+
+  .input2 {
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 250px;
+  }
+
+  .con {
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+    margin-right: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 140px;
+  }
+
+  .F1 {
+    margin-left: 30px;
+  }
+
+  btn {
+    margin-left: 70px;
+    background-color: #6699ff;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 12px 30px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 1fr;
+    margin-bottom: 240px;
+  }
+}
+
+.contact-info {
+  /* background-color: #000; */
+  /* border-radius: 15px; */
+  flex: 0 1 60%;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-right: 10px;
+  height: 600px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  width: 270px;
+  margin-left: 80px;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.icon-text > .MuiSvgIcon-root {
+  font-size: 50px;
+}
+
+span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+form {
+  padding: 40px;
+  background-color: #03254c;
+  color: white;
+}
+.form-control {
+  width: 600px;
+  background-color: #03254c;
+}
+
+.col {
+  display: flex;
+}
+
+button {
+  width: 200px;
+  margin-left: -130px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.icon {
+  margin-top: 10;
+}
+
+.modal-body {
+  overflow-y: auto;
+  padding-right: 35px;
+  padding-bottom: 35px;
+  padding-left: 35px;
+}
+.modal-body h2 {
+  font-size: 24px;
+}
+.modal-body .subtitle {
+  margin-top: 0;
+  margin-bottom: 36px;
 }

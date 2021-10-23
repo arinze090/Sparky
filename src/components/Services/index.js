@@ -9,7 +9,6 @@ import {
   ServicesH1,
   ServicesH2,
   ServicesIcon,
-  ServicesP,
   ServicesTitle,
   ServicesWrapper,
 } from './ServicesElements';
@@ -18,9 +17,9 @@ function Services() {
   return (
     <ServicesContainer>
       <ServicesH1>Services</ServicesH1>
-      <ServicesP>
+      {/* <ServicesP>
         Turpis facilisis tempor pulvinar in lobortis ornare magna.
-      </ServicesP>
+      </ServicesP> */}
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />

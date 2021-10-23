@@ -30,9 +30,7 @@ function HeroSection() {
         <HeroP>
           Leading Provider of Industrial <br></br> Solutions
         </HeroP>
-        <HeroP1>
-          Ullamcorper fringi tortor consec adipis elit sed do eiusmod tempor.
-        </HeroP1>
+        <HeroP1>World class Management and Engineering Consultancy. </HeroP1>
         <HeroBtnWrapper>
           <Button
             to="signup"
@@ -48,7 +46,7 @@ function HeroSection() {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             fontWeight="true">
-            Our Projects
+            Contact Us
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

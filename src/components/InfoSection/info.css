@@ -1,23 +1,190 @@
-.experience{
-    display: flex;
-    flex-direction: row;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+#info-container {
+  width: 1200px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  grid-template-columns: 1fr;
 }
 
-.years{
+.experience {
+  display: flex;
+  flex-direction: row;
+}
+
+.years {
+  display: flex;
+  flex-direction: column;
+  margin-right: 44px;
+}
+
+.years > p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.years > h1 {
+  font-size: 48px;
+  margin-top: -5px;
+  color: black;
+  font-weight: 700;
+}
+
+.main {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #6699ff;
+  margin-top: 120px;
+}
+
+.cons {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-family: 'Mulish';
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.man {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  #info-container {
+    /* overflow-x: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    margin-bottom: 70px;
+    justify-content: center;
+    max-height: 100%;
+    max-width: min-content;
+    margin-top: -20px;
+  }
+
+  .imageContainer {
+    display: flex;
+    width: fit-content;
+    height: min-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 90px;
+  }
+
+  .man {
+    width: 80%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -20px;
+  }
+
+  .main {
+    margin-top: -10px;
+  }
+
+  .main {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #6699ff;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: min-content;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    object-fit: contain;
+    -o-object-fit: contain;
+  }
+
+  .imageContainer {
+    display: flex;
+    width: fit-content;
+    height: min-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: -20px;
+  }
+
+  .contactImage {
+    width: 85%;
+    height: 85%;
+    /* margin-left: 30px; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .man {
+    width: 300px;
+    margin-left: -20px;
+  }
+
+  .main {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #6699ff;
+    margin-top: 10px;
+  }
+
+  /* .cons {
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+    margin-right: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: 140px;
+  } */
+
+  .years {
     display: flex;
     flex-direction: column;
     margin-right: 44px;
-}
+    max-width: 80px;
+  }
 
-.years > p{
-    font-size: 14px;
+  .years > p {
+    font-size: 10px;
     margin-bottom: 8px;
     color: black;
-}
+  }
 
-.years > h1{
-    font-size: 48px;
+  .years > h1 {
+    font-size: 28px;
     margin-top: -5px;
     color: black;
     font-weight: 700;
+  }
 }

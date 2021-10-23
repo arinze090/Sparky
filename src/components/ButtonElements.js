@@ -10,6 +10,7 @@ export const Button = styled(Link)`
   font-weight: ${({ fontWeight }) => (fontWeight ? '700' : '400')};
   outline: none;
   margin-right: 27px;
+  margin-bottom: 27px;
   border: none;
   cursor: pointer;
   display: flex;
@@ -22,4 +23,11 @@ export const Button = styled(Link)`
     background: ${({ primary }) => (primary ? '#6699FF' : '#fff')};
     color: ${({ dark }) => (dark ? '#fff' : '#000')};
   }
+
+  @media screen and (max-width: 400px) {
+   width: 10px;
+   font-size: 7px;
+}
+
+
 `

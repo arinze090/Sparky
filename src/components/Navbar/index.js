@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import { FaBars } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import './navbar.css';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavMenu, NavLinks, } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo,  NavItem, NavMenu, NavLinks, } from './NavbarElements';
 
 
 function Navbar({ toggle }) {
@@ -31,12 +31,12 @@ function Navbar({ toggle }) {
             <IconContext.Provider value={{ color: '#000' }}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                        <NavLogo to='/' onClick={toggleHome}>
-                        <img src={require('../images/mastonLogo.png')} alt="MastonLogo" className='mastonLogo' />
+                    <NavLogo to='/' onClick={toggleHome}>
+                        <img src={require('../images/maston.png')} alt="MastonLogo" className='mastonLogo' />
                     </NavLogo>
-                    <MobileIcon onClick={toggle}>
+                    {/* <MobileIcon onClick={toggle}>
                         <FaBars />
-                    </MobileIcon>
+                    </MobileIcon> */}
                     <NavMenu>
                         <NavItem>
                             <NavLinks to="home" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Home</NavLinks>

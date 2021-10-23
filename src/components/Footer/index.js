@@ -20,21 +20,20 @@ function Footer() {
     <div className="footer">
       <div className="footer__wrapper">
         <div className="logosection">
-          <FooterLogo to='/' onClick={toggleHome}>
+          <FooterLogo to="/" onClick={toggleHome}>
             <img
-              src={require('../images/mastonLogo.png')}
+              src={require('../images/maston.png')}
               alt="MastonLogo"
               className="mastonLogo"
             />
           </FooterLogo>
-          <p className="logo">MASTON GEORGE</p>
           <div className="map">
             <RoomIcon />
-            <p>Abuja</p>
+            <p>No.1 Maston George Crescent, <br /> Emene Industrial Layout, Enugu.</p>
           </div>
           <div className="map">
             <PhoneIcon />
-            <p>+234 816 361 0689</p>
+            <p>+234 818 222 5993</p>
           </div>
           <div className="map">
             <EmailIcon />
@@ -44,7 +43,7 @@ function Footer() {
         <div className="footer__left">
           <div className="link1">
             <FooterLinkTitle>QUICK LINKS</FooterLinkTitle>
-            <FooterLink to='/'>Home</FooterLink>
+            <FooterLink to="/">Home</FooterLink>
             <FooterLink to="about">About</FooterLink>
             <FooterLink to="/">Services</FooterLink>
             <FooterLink to="/">Contact</FooterLink>
@@ -66,12 +65,11 @@ function Footer() {
       </div>
       <div className="copyright">
         <WebsiteRights>
-          Copyright © {new Date().getFullYear()} Maston George Inc.
+          Copyright © {new Date().getFullYear()} Maston George Inc. Designed by
+          Techken
         </WebsiteRights>
       </div>
     </div>
-
-
   );
 }
 
